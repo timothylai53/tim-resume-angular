@@ -1,0 +1,25 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">Timothy Lai</div>
+    <div class="nav-links">
+      <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a routerLink="hobbies" routerLinkActive="active">Hobbies</a>
+      <a routerLink="contact" routerLinkActive="active">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Timothy Lai. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/timothylai53" target="_blank">GitHub</a>
+      <a href="https://instagram.com/timothyjunhong" target="_blank">Instagram</a>
+      <a href="mailto:timothylai53@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>

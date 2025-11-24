@@ -1,0 +1,19 @@
+<div class="hobbies-container">
+  <header class="hobbies-header">
+    <h1 class="page-title">My Hobbies</h1>
+    <p class="page-subtitle">What I love to do in my free time</p>
+  </header>
+
+  <div class="hobbies-grid">
+    <div class="hobby-card" *ngFor="let hobby of hobbies">
+      <div class="hobby-image-container">
+        <!-- Ensure you place images in public/assets/hobbies/ -->
+        <img [src]="hobby.image" [alt]="hobby.title" class="hobby-image">
+      </div>
+      <div class="hobby-content">
+        <h2 class="hobby-title">{{ hobby.title }}</h2>
+        <p class="hobby-description">{{ hobby.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

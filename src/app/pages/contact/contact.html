@@ -1,0 +1,22 @@
+<div class="contact-container">
+  <header class="contact-header">
+    <h1 class="page-title">Get in Touch</h1>
+    <p class="page-subtitle">I'd love to hear from you. Let's connect!</p>
+  </header>
+
+  <div class="contact-grid">
+    <a *ngFor="let item of contactInfo" [href]="item.link" target="_blank" class="contact-card">
+      <div class="icon-circle">
+        <span class="icon">{{ item.icon }}</span>
+      </div>
+      <div class="contact-details">
+        <h3 class="contact-type">{{ item.type }}</h3>
+        <p class="contact-value">{{ item.value }}</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="message-section">
+    <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+  </div>
+</div>
