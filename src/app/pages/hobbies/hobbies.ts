@@ -18,11 +18,6 @@ export class Hobbies {
       title: 'Watch Movie',
       description: 'Enjoying cinematic storytelling and analyzing film techniques.',
       image: 'assets/hobbies/movie.jpg'
-    },
-    {
-      title: 'Play Drum',
-      description: 'Expressing rhythm and energy through percussion.',
-      image: 'assets/hobbies/drum.jpg'
     }
   ];
 }
